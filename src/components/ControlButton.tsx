@@ -28,7 +28,11 @@ class ControlButton extends React.Component < { text: string, color : string, ic
             onMouseEnter={() => this.setState({hovered:true})}
             onMouseLeave={() => this.setState({hovered:false})} >
 
-            <div className="btnContent">
+            <div className="btnContent" style={{
+                display: "grid",
+                gridTemplateColumns: (!this.state.hovered) ?  "100% auto" : "auto auto",
+                transition: "0.2s"
+            }}>
                 <FontAwesomeIcon style={{...faStyle, ...{ textAlign: this.state.hovered ? "left" : "center" } }} icon={this.props.icon}></FontAwesomeIcon> { (this.state.hovered ? this.props.text : "") }
             </div>
 
