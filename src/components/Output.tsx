@@ -26,6 +26,9 @@ const style : any = {
     },
 
     sub : {
+        paddingTop: "1.5vh",
+        paddingLeft : "1.5vh",
+        textAlign : "left",
         width: "100%",
         height : "10%",
         position : "relative",
@@ -37,10 +40,10 @@ class Output extends React.Component {
     render(): React.ReactNode {
         return <div style={style.main}>
             <div style={style.content}>
-                
+                Test
             </div>
             <div style={style.sub}>
-
+                Prova:
             </div>
         </div>
     }

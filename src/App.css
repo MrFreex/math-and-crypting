@@ -6,7 +6,18 @@
   height: 70vh;
 }
 
+input:focus {
+  outline: none
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Khand&family=Source+Code+Pro&display=swap');
+
+@media screen and (max-width: 1042px) {
+    .App {
+      grid-template-columns: auto !important;
+      grid-template-rows: auto auto !important;
+    }
+}
 
 body {
   background-color: #282c34;
