@@ -57,11 +57,6 @@ class App extends React.Component <{}, {
 
   buttonPressed = (type : string) => {
 
-    const message = 'Hello, World!';
-
-// Generate Crypt keys
-    const keys = Crypt.generate(250);
-
     if (type === "run") {
       var { e, n, d} = Crypt.generate(250)
       var Public : any, Private : any
