@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 interface thisProps {
 
@@ -32,9 +32,6 @@ const style : any = {
 }
 
 class Inputs extends React.Component < thisProps > {
-    constructor(props : thisProps) {
-        super(props)
-    }
 
     getInput = (placeHolder : string, upperLabel : string) => {
         return <div style={style.inputblock}>
