@@ -9,9 +9,9 @@ const style : any = {
 
 let Controls = (props : any) => {
     const ret : any = [
-        <ControlButton text="Avvia" color="#4BDB6A" icon={FI.faPlay}></ControlButton>,
-        <ControlButton text="Stop" color="#DB534B" icon={FI.faStop}></ControlButton>,
-        <ControlButton text="Passo" color="#F0C839" icon={FI.faArrowRightLong}></ControlButton>
+        <ControlButton onClick={ () => props.cb("run")} text="Avvia" color="#4BDB6A" icon={FI.faPlay}></ControlButton>,
+        <ControlButton onClick={ () => props.cb("stop")} text="Stop" color="#DB534B" icon={FI.faStop}></ControlButton>,
+        <ControlButton onClick={ () => props.cb("step")} text="Passo" color="#F0C839" icon={FI.faArrowRightLong}></ControlButton>
     ]
 
     return <div style={style}>

@@ -14,7 +14,7 @@ const faStyle : any = {
     margin : "auto"
 }
 
-class ControlButton extends React.Component < { text: string, color : string, icon: typeof FI.faCoffee }, { hovered:boolean } > {
+class ControlButton extends React.Component < { onClick: React.MouseEventHandler<HTMLButtonElement>, text: string, color : string, icon: typeof FI.faCoffee }, { hovered:boolean } > {
     constructor(props : any) {
         super(props)
 
@@ -24,7 +24,7 @@ class ControlButton extends React.Component < { text: string, color : string, ic
     }
 
     render(): React.ReactNode {
-        return <button className="controlButton" style={{...style, ...{ background: this.props.color }}}
+        return <button onClick={this.props.onClick} className="controlButton" style={{...style, ...{ background: this.props.color }}}
             onMouseEnter={() => this.setState({hovered:true})}
             onMouseLeave={() => this.setState({hovered:false})} >
 

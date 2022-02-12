@@ -36,14 +36,23 @@ const style : any = {
     }
 }
 
-class Output extends React.Component {
+class Output extends React.Component <{ lines: string[], result : string }> {
+
+    getLines = (lines : string[]) => {
+        var toRet = lines.map((val) => {
+            return <div>{val}</div>
+        })
+
+        return toRet
+    }
+
     render(): React.ReactNode {
         return <div style={style.main}>
             <div style={style.content}>
-                Test
+                { this.getLines(this.props.lines) }
             </div>
             <div style={style.sub}>
-                Prova:
+                Result: { this.props.result }
             </div>
         </div>
     }
