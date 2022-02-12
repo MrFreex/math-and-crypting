@@ -11,7 +11,6 @@ const style : any = {
 
 const faStyle : any = {
     display: "inline-block",
-    width: "100%",
     margin : "auto"
 }
 

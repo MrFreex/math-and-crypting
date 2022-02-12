@@ -15,8 +15,8 @@
 }
 
 .btnContent {
-    display: flex;
-    justify-content: left;
+    display: grid;
+    grid-template-columns: 3.5vh auto;
 }
 
 .controlButton:hover {
