@@ -136,8 +136,6 @@ class App extends React.Component <{}, {
       await this.setState({
         runState : this.state.runState + 1
       })
-
-      alert("State is " + this.state.runState)
     
       if (this.state.runState === 0) {
        this.initSteps() 
