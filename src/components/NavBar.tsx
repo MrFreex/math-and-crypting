@@ -34,7 +34,7 @@ const style : any = {
 class NavBar extends React.Component {
     render : any = () => {
         return <div style={style.nav}>
-            <a href="https://github.com/MrFreex" target="_blank">
+            <a href="https://github.com/MrFreex" target="_blank" rel="noreferrer">
                 <h1 className="navTitle" style={style.navTitle}><FontAwesomeIcon style={style.fIcon} icon={faCode}></FontAwesomeIcon> CryPt0M4th</h1>
             </a>
         </div>
