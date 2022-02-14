@@ -1,5 +1,7 @@
 import React from "react";
 
+import './navBar.css'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCode } from '@fortawesome/free-solid-svg-icons'
 
@@ -20,7 +22,8 @@ const style : any = {
         fontFamily : "Source Code Pro",
         fontWeight : 400,
         padding: "0",
-        margin: "auto"
+        margin: "auto",
+        transition : "0.25s"
     },
 
     fIcon : {
@@ -31,7 +34,9 @@ const style : any = {
 class NavBar extends React.Component {
     render : any = () => {
         return <div style={style.nav}>
-            <h1 style={style.navTitle}><FontAwesomeIcon style={style.fIcon} icon={faCode}></FontAwesomeIcon> CryPt0M4th</h1>
+            <a href="https://github.com/MrFreex" target="_blank">
+                <h1 className="navTitle" style={style.navTitle}><FontAwesomeIcon style={style.fIcon} icon={faCode}></FontAwesomeIcon> CryPt0M4th</h1>
+            </a>
         </div>
     }
 }

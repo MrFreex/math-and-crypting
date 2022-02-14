@@ -10,6 +10,24 @@ input:focus {
   outline: none
 }
 
+.foot {
+  position: absolute;
+  bottom: 0;
+
+}
+
+a:link {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+a:visited {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Khand&family=Source+Code+Pro&display=swap');
 
 @media screen and (max-width: 1042px) {

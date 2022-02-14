@@ -1,0 +1,4 @@
+.navTitle:hover {
+    transition: 0.25s;
+    color: #31e060 !important;
+}
