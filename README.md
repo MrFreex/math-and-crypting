@@ -5,5 +5,3 @@ This website was made to fullfill a school assignment in a more creative way. Th
 We decided to do something newer, related to our school studies: IT.
 
 It is now available to everyone and open source! Enjoy knowing how we built it.
-
-P.S. : The "base.js" source code was taken from this repo: https://github.com/denysdovhan/rsa-labwork
